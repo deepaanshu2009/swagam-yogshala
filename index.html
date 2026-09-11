@@ -56,7 +56,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <style>
         *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-        html{scroll-behavior:smooth;scroll-padding-top:80px}
+        html{scroll-behavior:smooth;scroll-padding-top:80px;overflow-x:hidden}
         body{font-family:'Poppins',sans-serif;overflow-x:hidden}
         h1,h2,h3,h4,h5,h6{font-family:'Playfair Display',serif}
         .scroll-progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg,#10b981,#0d9488);z-index:10000;transition:width .2s ease}
@@ -86,7 +86,7 @@
         .nav-cta::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);transition:left .5s ease}
         .nav-cta:hover::before{left:100%}
         @media(max-width:380px){
-            html{scroll-padding-top:64px}
+            html{scroll-padding-top:56px}
             .hero-text h1{font-size:1.75rem;line-height:1.2}
             .hero-text p{font-size:0.875rem}
             .hero-indicators button{width:48px;height:48px}
@@ -132,9 +132,9 @@
 
     <!-- HEADER -->
     <header id="mainHeader" role="banner" class="fixed inset-x-0 top-0 z-50 bg-white/95 border-b border-gray-100">
-        <div class="flex items-center justify-between h-[72px] px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-14 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <a href="#home" class="flex items-center group" aria-label="Swagam Yogshala - Home">
-                <img src="images/logo-removebg-preview.png" alt="Swagam Yogshala Logo - Best Yoga Classes in Faridabad" class="h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105" width="64" height="64" loading="eager" decoding="async">
+                <img src="images/logo-removebg-preview.png" alt="Swagam Yogshala Logo - Best Yoga Classes in Faridabad" class="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105" width="48" height="48" loading="eager" decoding="async">
             </a>
             <div class="flex items-center gap-3">
                 <a href="tel:+918287734410" aria-label="Call Swagam Yogshala at +91 82877 34410" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-emerald-700 border border-emerald-200 rounded-full hover:bg-emerald-50 transition-all"><i class="fas fa-phone" aria-hidden="true"></i><span class="hidden md:inline">Call</span></a>
@@ -152,13 +152,11 @@
                 <a href="#reviews" class="nav-link block px-3 py-2 rounded-lg transition-all duration-200 hover:bg-green-50 hover:text-green-800">Reviews</a>
                 <a href="#faq" class="nav-link block px-3 py-2 rounded-lg transition-all duration-200 hover:bg-green-50 hover:text-green-800">FAQ</a>
                 <a href="#contact" class="nav-link block px-3 py-2 rounded-lg transition-all duration-200 hover:bg-green-50 hover:text-green-800">Contact</a>
-                <div class="w-px h-6 mx-1 bg-gray-200" aria-hidden="true"></div>
-                <a href="https://wa.me/918287734410?text=Hi%20Swati%2C%20I%20found%20Swagam%20Yogshala%20and%20would%20like%20to%20know%20more%20about%20your%20yoga%20classes." target="_blank" rel="noopener" aria-label="Book yoga class on WhatsApp" class="inline-flex items-center gap-2 px-5 py-2.5 font-semibold text-white transition-all duration-300 rounded-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 shadow-md hover:shadow-lg nav-cta"><i class="fab fa-whatsapp" aria-hidden="true"></i> Book Now</a>
             </nav>
         </div>
     </header>
     <div id="overlay" aria-hidden="true" class="fixed inset-0 z-40 transition-opacity opacity-0 pointer-events-none bg-black/40 backdrop-blur-sm"></div>
-    <aside id="sideNav" role="dialog" aria-modal="true" aria-label="Mobile navigation" class="fixed top-0 right-0 z-50 h-full w-80 max-w-[85%] bg-white shadow-2xl border-l border-green-100 translate-x-full flex flex-col overflow-y-auto transition-transform duration-300 ease-out">
+    <aside id="sideNav" role="dialog" aria-modal="true" aria-label="Mobile navigation" class="fixed top-0 right-0 z-50 h-full w-80 max-w-[85%] bg-white shadow-2xl border-l border-green-100 translate-x-[110%] invisible flex flex-col overflow-y-auto transition-all duration-300 ease-out">
         <div class="sticky top-0 z-10 flex items-center justify-between p-4 bg-white/90 backdrop-blur-md border-b border-gray-100">
             <div class="flex items-center">
                 <img src="images/logo-removebg-preview.png" alt="Swagam Yogshala Logo" class="h-12 w-auto object-contain" width="48" height="48" loading="eager" decoding="async">
@@ -618,7 +616,7 @@
     </main>
 
     <!-- Floating WhatsApp -->
-    <a href="https://wa.me/918287734410?text=Hi%20Swati%2C%20I%20found%20Swagam%20Yogshala%20and%20would%20like%20to%20know%20more%20about%20your%20yoga%20classes." target="_blank" rel="noopener" class="fixed z-50 items-center justify-center w-12 h-12 sm:w-14 sm:h-14 text-white bg-green-500 rounded-full shadow-lg bottom-4 right-4 sm:bottom-6 sm:right-6 hover:bg-green-600 lg:hidden" aria-label="Chat with Swagam Yogshala on WhatsApp"><i class="text-xl sm:text-2xl fab fa-whatsapp" aria-hidden="true"></i></a>
+    <a href="https://wa.me/918287734410?text=Hi%20Swati%2C%20I%20found%20Swagam%20Yogshala%20and%20would%20like%20to%20know%20more%20about%20your%20yoga%20classes." target="_blank" rel="noopener" class="fixed z-50 flex items-center justify-center w-14 h-14 overflow-hidden text-white bg-green-500 rounded-full shadow-lg bottom-5 right-5 hover:bg-green-600 lg:hidden" aria-label="Chat with Swagam Yogshala on WhatsApp"><i class="text-xl fab fa-whatsapp" aria-hidden="true"></i></a>
 
     <!-- AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
@@ -636,7 +634,7 @@
             document.querySelectorAll('.side-nav-link').forEach(a=>{a.classList.remove('active');if(a.getAttribute('href')==='#'+current)a.classList.add('active')});
         });
         const openNav=document.getElementById('openNav'),closeNav=document.getElementById('closeNav'),sideNav=document.getElementById('sideNav'),overlay=document.getElementById('overlay');
-        function toggleNav(){sideNav.classList.toggle('translate-x-full');overlay.classList.toggle('opacity-0');overlay.classList.toggle('pointer-events-none')}
+        function toggleNav(){sideNav.classList.toggle('translate-x-[110%]');sideNav.classList.toggle('invisible');overlay.classList.toggle('opacity-0');overlay.classList.toggle('pointer-events-none')}
         openNav.addEventListener('click',toggleNav);closeNav.addEventListener('click',toggleNav);overlay.addEventListener('click',toggleNav);
         document.querySelectorAll('#sideNav a').forEach(l=>l.addEventListener('click',toggleNav));
         const carousel=document.getElementById('home'),slidesWrapper=carousel.querySelector('.carousel-slide'),slides=slidesWrapper.children,indicators=carousel.querySelectorAll('.indicator'),prevBtn=carousel.querySelector('.carousel-prev'),nextBtn=carousel.querySelector('.carousel-next');
